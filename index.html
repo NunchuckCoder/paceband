@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pulseira de Ritmo</title>
+  
+  <!-- 
+  ==========================================================
+  Projeto desenvolvido por Mikey aka NunchuckCoder
+  https://github.com/NunchuckCoder
+  ==========================================================
+  -->
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Pulseira de ritmo</h1>
+
+  <div class="form-group">
+    <label>Objectivo (hh:mm:ss):</label>
+    <input type="text" id="hour" value="00" maxlength="2" size="2"> :
+    <input type="text" id="min" value="30" maxlength="2" size="2"> :
+    <input type="text" id="sec" value="00" maxlength="2" size="2">
+  </div>
+
+  <div class="form-group">
+    <label>Distância:</label>
+    <select id="dist">
+      <option value="0">5K</option>
+      <option value="1">5 Milhas</option>
+      <option value="2">10K</option>
+      <option value="3">10 Milhas</option>
+      <option value="4">Meia-Maratona</option>
+      <option value="5">Maratona</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Unidades:</label>
+    <select id="distType">
+      <option value="0">Quilómetros</option>
+      <option value="1">Milhas</option>
+    </select>
+  </div>
+
+  <!-- CAMPOS DE EMERGÊNCIA (OPCIONAIS) -->
+  <div class="emergency-inputs">
+    <div style="margin-bottom:8px;"><strong>Contato de Emergência (opcional)</strong></div>
+    <div class="form-group" style="margin:6px 0;">
+      <label>Nome:</label>
+      <input type="text" id="emergencyName" placeholder="Deixe em branco se não quiser" maxlength="30">
+    </div>
+    <div class="form-group" style="margin:6px 0;">
+      <label>Telefone:</label>
+      <input type="text" id="emergencyPhone" placeholder="Deixe em branco se não quiser" maxlength="20">
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:20px;">
+    <button class="btn" onclick="calcTime()">Criar Banda</button>
+    <button class="btn" onclick="window.print()">Imprimir</button>
+  </div>
+
+  <!-- PACEBAND 20 cm MÍNIMO -->
+  <div id="paceband">
+    <div class="paceband-inner">
+      <div class="logo">
+        <img src="img/paceband.png" alt="Logo">
+      </div>
+
+      <!-- EMERGÊNCIA – fundo vermelho claro -->
+      <div class="emergency" id="emergencyBlock">
+        <div class="label">EMERGÊNCIA</div>
+        <div class="info">
+          <span class="name" id="printName"></span>
+          <span class="phone" id="printPhone"></span>
+        </div>
+      </div>
+
+      <!-- TABELA COM ALTURA FIXA + ESPAÇO FINAL -->
+      <div class="paceband-table-container">
+        <table class="paceband">
+          <thead>
+            <tr>
+              <th id="unitHeader">km</th>
+              <th>Tempo</th>
+            </tr>
+          </thead>
+          <tbody id="paceRows"></tbody>
+        </table>
+        <div class="spacer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
