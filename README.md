@@ -10,7 +10,7 @@
 <p align="center">
   <img src="https://github.com/NunchuckCoder/paceband/blob/main/paceband.png?raw=true" />
 </p>
-<p align="center">Uma **pulseira de ritmo personalizada** para corridas (5K, 10K, Meia-Maratona, Maratona).</br>
+<p align="center">Uma <b>pulseira de ritmo personalizada</b> para corridas (5K, 10K, Meia-Maratona, Maratona).</br>
 Imprime em papel, corta e usa no pulso!
 </p>
 
