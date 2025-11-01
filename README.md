@@ -1,7 +1,18 @@
-# Pulseira de Ritmo (Pace Band)
+<h1 align="center">Pulseira de Ritmo (Pace Band)</h1>
 
-Uma **pulseira de ritmo personalizada** para corridas (5K, 10K, Meia-Maratona, Maratona).  
+<p align="center">
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img src="https://img.shields.io/badge/Notepad++-90E59A.svg?style=for-the-badge&logo=notepad%2b%2b&logoColor=black" />
+  <img src="https://img.shields.io/badge/status-active-success?style=for-the-badge" />
+</p>
+<p align="center">
+  <img src="https://github.com/NunchuckCoder/paceband/blob/main/paceband.png?raw=true" />
+</p>
+<p align="center">Uma **pulseira de ritmo personalizada** para corridas (5K, 10K, Meia-Maratona, Maratona).</br>
 Imprime em papel, corta e usa no pulso!
+</p>
 
 ---
 
@@ -11,8 +22,6 @@ Imprime em papel, corta e usa no pulso!
 - Distâncias: 5K, 10K, Meia-Maratona, Maratona (km ou milhas)
 - **Contato de emergência opcional** (fundo vermelho claro)
 - **Altura mínima de 20 cm** (200 mm)
-- **Linhas da tabela com 20px fixos**
-- Espaço em branco até o final
 - **Impressão otimizada** (só a pulseira aparece)
 
 ---
@@ -82,8 +91,8 @@ Substitua img/paceband.png por sua imagem (150px de largura recomendada)
 ## Tecnologias
 
 HTML5
-CSS3 (Flexbox + @media print)
-JavaScript (vanilla – sem dependências)
+CSS3
+JavaScript
 
 ---
 
